@@ -15,9 +15,9 @@
             --bg: #08080A; --bg-2: #0F0F12; --bg-3: #16161B; --surface: #1C1C23;
             --border: rgba(255,255,255,0.07); --border-hover: rgba(255,255,255,0.14);
             --text: #EAEAEF; --text-2: rgba(255,255,255,0.52); --text-3: rgba(255,255,255,0.30);
-            --accent: #6366F1; --accent-2: #818CF8; --accent-glow: rgba(99,102,241,0.12);
-            --warm: #F0845C; --warm-2: #F7A87C; --warm-glow: rgba(240,132,92,0.10);
-            --teal: #00D2C8; --teal-glow: rgba(0,210,200,0.10);
+            --accent: #06B6D4; --accent-2: #22D3EE; --accent-glow: rgba(6,182,212,0.10);
+            --warm: #06B6D4; --warm-2: #22D3EE; --warm-glow: rgba(6,182,212,0.10);
+            --teal: #06B6D4; --teal-glow: rgba(6,182,212,0.10);
             --green: #10B981; --green-glow: rgba(16,185,129,0.10);
             --red: #EF4444;
             --r: 14px; --r-sm: 8px;
@@ -49,7 +49,7 @@
         }
         .nav-icon {
             width: 32px; height: 32px; border-radius: 10px;
-            background: linear-gradient(135deg, var(--accent), var(--warm));
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
             display: flex; align-items: center; justify-content: center; font-size: 15px;
         }
         .nav-back {
@@ -65,7 +65,7 @@
         }
         .hero-glow {
             position: absolute; top: -100px; left: 50%; transform: translateX(-50%); width: 800px; height: 500px;
-            background: radial-gradient(circle, rgba(99,102,241,0.10) 0%, rgba(240,132,92,0.05) 40%, transparent 70%);
+            background: radial-gradient(circle, rgba(6,182,212,0.10) 0%, rgba(6,182,212,0.05) 40%, transparent 70%);
             pointer-events: none; filter: blur(80px);
         }
         .hero h1 {
@@ -74,7 +74,7 @@
             letter-spacing: -0.03em; margin-bottom: 16px; position: relative;
         }
         .hero h1 .gradient {
-            background: linear-gradient(135deg, var(--accent) 0%, var(--warm) 100%);
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
             -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
         }
         .hero-sub {
@@ -106,7 +106,7 @@
             font-size: 16px; font-family: 'JetBrains Mono', monospace; outline: none;
             transition: border-color 0.2s;
         }
-        .field-input:focus { border-color: rgba(99,102,241,0.4); }
+        .field-input:focus { border-color: rgba(6,182,212,0.4); }
         .field-input::placeholder { color: var(--text-3); }
 
         .range-row { display: flex; align-items: center; gap: 16px; }
@@ -131,7 +131,7 @@
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1.5l5 5 5-5' stroke='%23666' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
             background-repeat: no-repeat; background-position: right 16px center;
         }
-        .field-select:focus { border-color: rgba(99,102,241,0.4); }
+        .field-select:focus { border-color: rgba(6,182,212,0.4); }
 
         .results { position: sticky; top: 90px; }
         .result-card {
@@ -164,15 +164,15 @@
 
         .cta-box {
             margin-top: 24px; padding: 20px; background: var(--accent-glow);
-            border: 1px solid rgba(99,102,241,0.15); border-radius: 12px; text-align: center;
+            border: 1px solid rgba(6,182,212,0.15); border-radius: 12px; text-align: center;
         }
         .cta-box p { font-size: 14px; color: var(--text-2); margin-bottom: 12px; }
         .cta-btn {
-            display: inline-block; padding: 12px 28px; background: var(--warm); color: #0A0A0B;
+            display: inline-block; padding: 12px 28px; background: var(--accent); color: #0A0A0B;
             font-size: 14px; font-weight: 600; border-radius: 8px; transition: all 0.2s;
             font-family: 'Space Grotesk', sans-serif; text-decoration: none;
         }
-        .cta-btn:hover { background: var(--warm-2); color: #0A0A0B; transform: translateY(-1px); }
+        .cta-btn:hover { background: var(--accent-2); color: #0A0A0B; transform: translateY(-1px); }
 
         footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; }
         .footer-text { font-size: 13px; color: var(--text-3); }
